@@ -1,0 +1,31 @@
+[package]
+name = "sentinel-scope"
+edition = "2021"
+license = "Apache-2.0"
+version = "0.1.0"
+authors = ["SentinelScope maintainers"]
+
+[workspace]
+members = [
+  ".",
+  "crates/core",
+  "crates/packet",
+  "crates/ioc",
+  "crates/rules",
+  "crates/policy",
+  "crates/cli",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+license = "Apache-2.0"
+version = "0.1.0"
+authors = ["SentinelScope maintainers"]
+
+[dependencies]
+sentinel-core = { path = "crates/core" }
+sentinel-packet = { path = "crates/packet" }
+sentinel-ioc = { path = "crates/ioc" }
+sentinel-rules = { path = "crates/rules" }
+sentinel-policy = { path = "crates/policy" }

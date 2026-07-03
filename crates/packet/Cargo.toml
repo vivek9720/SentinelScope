@@ -1,0 +1,13 @@
+[package]
+name = "sentinel-packet"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[lib]
+name = "sentinel_packet"
+path = "src/lib.rs"
+
+[dependencies]
+sentinel-core = { path = "../core" }

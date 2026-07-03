@@ -1,0 +1,2 @@
+-A INPUT -p tcp --dport notaport -j DROP
+add rule inet filter

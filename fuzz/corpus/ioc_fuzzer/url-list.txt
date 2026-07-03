@@ -1,0 +1,2 @@
+https://example.com/login block severity=high
+http://test.invalid/path observe

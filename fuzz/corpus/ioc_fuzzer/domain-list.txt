@@ -1,0 +1,2 @@
+example.com block severity=medium
+sub.example.net allow

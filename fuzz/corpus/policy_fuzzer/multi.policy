@@ -1,0 +1,3 @@
+-A INPUT -p tcp --dport 22 -j ACCEPT
+-A INPUT -j DROP
+add rule inet filter output udp dport 53 accept

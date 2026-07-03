@@ -1,0 +1,1 @@
+alert tcp any any -> any 443 (msg:"tls host"; content:"example.com"; sid:1002; rev:1; classtype:policy-violation;)
