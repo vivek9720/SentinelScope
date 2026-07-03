@@ -11,12 +11,13 @@ members = [
   "crates/core",
   "crates/packet",
   "crates/ioc",
-  "crates/rules",
-  "crates/policy",
-  "crates/cli",
-]
-resolver = "2"
-
+  "crates/rules",
+  "crates/policy",
+  "crates/cli",
+]
+resolver = "2"
+exclude = ["fuzz"]
+
 [workspace.package]
 edition = "2021"
 license = "Apache-2.0"

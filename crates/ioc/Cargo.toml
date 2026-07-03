@@ -1,14 +1,27 @@
-[package]
-name = "sentinel-ioc"
-edition.workspace = true
-version.workspace = true
-license.workspace = true
-authors.workspace = true
-
-[lib]
-name = "sentinel_ioc"
-path = "src/lib.rs"
-
-[dependencies]
-sentinel-core = { path = "../core" }
-sentinel-packet = { path = "../packet" }
+[package]
+
+name = "sentinel-ioc"
+
+edition.workspace = true
+
+version.workspace = true
+
+license.workspace = true
+
+authors.workspace = true
+
+
+
+[lib]
+
+name = "sentinel_ioc"
+
+path = "src/lib.rs"
+
+
+
+[dependencies]
+
+sentinel-core = { path = "../core" }
+
+sentinel-packet = { path = "../packet" }

@@ -1,29 +1,57 @@
-[package]
-name = "sentinel-cli"
-edition.workspace = true
-version.workspace = true
-license.workspace = true
-authors.workspace = true
-
-[dependencies]
-sentinel-core = { path = "../core" }
-sentinel-packet = { path = "../packet" }
-sentinel-ioc = { path = "../ioc" }
-sentinel-rules = { path = "../rules" }
-sentinel-policy = { path = "../policy" }
-
-[[bin]]
-name = "packetscan"
-path = "src/bin/packetscan.rs"
-
-[[bin]]
-name = "iocmatch"
-path = "src/bin/iocmatch.rs"
-
-[[bin]]
-name = "rulecheck"
-path = "src/bin/rulecheck.rs"
-
-[[bin]]
-name = "policyaudit"
-path = "src/bin/policyaudit.rs"
+[package]
+
+name = "sentinel-cli"
+
+edition.workspace = true
+
+version.workspace = true
+
+license.workspace = true
+
+authors.workspace = true
+
+
+
+[dependencies]
+
+sentinel-core = { path = "../core" }
+
+sentinel-packet = { path = "../packet" }
+
+sentinel-ioc = { path = "../ioc" }
+
+sentinel-rules = { path = "../rules" }
+
+sentinel-policy = { path = "../policy" }
+
+
+
+[[bin]]
+
+name = "packetscan"
+
+path = "src/bin/packetscan.rs"
+
+
+
+[[bin]]
+
+name = "iocmatch"
+
+path = "src/bin/iocmatch.rs"
+
+
+
+[[bin]]
+
+name = "rulecheck"
+
+path = "src/bin/rulecheck.rs"
+
+
+
+[[bin]]
+
+name = "policyaudit"
+
+path = "src/bin/policyaudit.rs"

@@ -1,44 +1,43 @@
-[package]
-name = "sentinel-fuzz"
-version = "0.0.0"
-edition = "2021"
-publish = false
-
-[package.metadata]
-cargo-fuzz = true
-
-[dependencies]
-libfuzzer-sys = "0.4"
-sentinel-core = { path = "../crates/core" }
-sentinel-packet = { path = "../crates/packet" }
-sentinel-ioc = { path = "../crates/ioc" }
-sentinel-rules = { path = "../crates/rules" }
-sentinel-policy = { path = "../crates/policy" }
-
-[[bin]]
-name = "packet_fuzzer"
-path = "fuzz_targets/packet_fuzzer.rs"
-test = false
-doc = false
-bench = false
-
-[[bin]]
-name = "ioc_fuzzer"
-path = "fuzz_targets/ioc_fuzzer.rs"
-test = false
-doc = false
-bench = false
-
-[[bin]]
-name = "rules_fuzzer"
-path = "fuzz_targets/rules_fuzzer.rs"
-test = false
-doc = false
-bench = false
-
-[[bin]]
-name = "policy_fuzzer"
-path = "fuzz_targets/policy_fuzzer.rs"
-test = false
-doc = false
-bench = false
+[package]
+name = "sentinel-fuzz"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+sentinel-core = { path = "../crates/core" }
+sentinel-packet = { path = "../crates/packet" }
+sentinel-ioc = { path = "../crates/ioc" }
+sentinel-rules = { path = "../crates/rules" }
+sentinel-policy = { path = "../crates/policy" }
+
+[[bin]]
+name = "packet_fuzzer"
+path = "fuzz_targets/packet_fuzzer.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "ioc_fuzzer"
+path = "fuzz_targets/ioc_fuzzer.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "rules_fuzzer"
+path = "fuzz_targets/rules_fuzzer.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "policy_fuzzer"
+path = "fuzz_targets/policy_fuzzer.rs"
+test = false
+doc = false
+bench = false

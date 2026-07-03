@@ -1,1 +1,1 @@
-alert udp any any -> any 53 (msg:"dns query"; content:"example"; sid:1004; rev:1;)
+alert udp any any -> any 53 (msg:"dns query"; content:"example"; sid:1004; rev:1;)
